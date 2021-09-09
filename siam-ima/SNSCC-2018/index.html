@@ -1,0 +1,768 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"> 
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="Description" content="The University of Bath SIAM-IMA Student Chapter is priveleged to be hosting the SIAM UKIE National Student Chapter Conference in 2018."/>
+  <link rel="shortcut icon" href="http://www.bath.ac.uk/common/images/logos/favicon.ico" />
+  <title>SIAM UKIE National Student Chapter Conference 2018 | University of Bath</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="color" rel="stylesheet" type="text/css" href="../../styleCW.css" /> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90698888-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style type="text/css"><!--
+	
+    /* In a style block, comments are different. They start with a
+    slash ("/") and an asterisk ("*") and end with an asterisk ("*")
+    and another slash ("/"): */
+
+    /* Style blocks are written in Cascading Style Sheets (CSS). For
+    more information on CSS, try: 
+       http://www.w3.org/Style/CSS/
+    You will also find a link to the latest specifications there. */
+
+    /* First, we will set up some nice decorations */
+    /* This sets up the line that appears below the header */
+    h1 { border-bottom: medium solid;
+text-align: center;
+ }
+    /* The next rule sets of the line that appears above the footer. 
+    Notice the ".xxx" syntax which matches the "class" attribute.
+    See the bottom of the file to see what I mean. */
+    .footer { border-top: thin solid;
+text-align: center;}
+    
+    /* Next, the colours: */
+    body { background: lightgray; color: black; } /* main page */
+    :link { background: transparent; color: #483D8B; } /* unvisited links */
+    :visited { background: transparent; color: #483D8B; } /* visited links */
+    :link:hover, :visited:hover, :link:active, :visited:active
+      { background: transparent; color: #555555; } /* active links */
+    /* The next line sets the colour of the main header */
+    h1 { background: transparent; color: #483D8B; border-color: #000000; }
+    h2 { background: transparent; color: #483D8B; border-color: #000000; }
+    h3 { background: transparent; color: #483D8B; border-color: #000000; }
+    /* And the following line sets the colour of the "definition terms".
+    See the content below for more information. */
+    dt { background: transparent; color: #483D8B; }
+
+    /* The paddings and margins */
+    /* So that the footer doesn't look squashed up, we give it some padding.
+    The "em" units are relative to the font size of the element. The first
+    number refers to the top and bottom padding, the second to the right and
+    left padding. */
+    .footer { padding: 0.1em 0.2em; }
+    dt { margin-top: 0.5em; }
+
+    /* Next we'll set the fonts */
+    body { font-family: Verdana, Arial, sans-serif; }
+    h1 { font-weight: 100; letter-spacing: 0.2em; margin-top: 60px;}
+    h2 { font-weight: bold}
+    dt { font-weight: bold; display: run-in; }
+    p {text-align: justify;}
+    .footer { font-size: smaller; font-style: italic; }
+
+    /* Finally, if you add a picture, we'll just make sure it floats
+    to the right of the page */
+    p img { float: right; }
+	
+div.image {
+  max-width: 900px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border: solid #483D8B;
+}
+
+.footer {font-style: italic; }
+
+div.image img {
+  max-height: 200px;
+  max-width: 300px;
+  vertical-align: middle;
+  padding-top: 1em;
+  padding-right: 3em;
+  padding-bottom: 1em;
+  padding-left: 3em;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right 0;
+    width: 100%;
+    font-family: Verdana, Arial, sans-serif; 
+}
+
+ul.topnav li {float: left;
+    min-width: 16.666666%;
+    margin: 0px;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    margin: 0px;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #483D8B;}
+ul.topnav li a:hover {color: black;}
+
+ul.topnav li a.active {background-color: #483D8B;}
+
+ul.topnav li.right {float: right;}
+
+ul.secondnav li {float: left;
+    min-width: 16.6%;
+    margin: 0px;
+    }
+
+ul.secondnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+}
+
+ul.secondnav li a:hover:not(.active) {background-color: lightgray;}
+ul.secondnav li a:hover {color: black;}
+
+ul.secondnav li a.active {background-color: #483D8B;}
+
+ul.secondnav li.right {float: right;}
+
+table.program td, th {width:70%;}
+table.program td.left {width:25%;}
+table.program td.nobord-left{
+  border: none;
+  width: 15%;
+  }
+
+body {margin-top: 50px;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav {position: static;}
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    div.menu ul {margin-left: auto;
+    margin-right: auto;}
+    ul.secondnav li {float: left; min-width: 50%;}
+    ul.secondnav li.odd {width: 100%;}
+    body {margin-top: 0px;}
+    div.image img {padding: 0;}
+    table.program {font-size: 0.9em;}
+}
+
+-->
+</style>
+
+<script type="text/javascript"
+		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/javascript">
+window.onload = function() {
+  var a = document.getElementById("showmore");
+  a.onclick = function() {
+    //hides the #less
+    document.getElementById('less').style.display = "none";
+    //var child = document.getElementById('less');
+    //child.parentNode.removeChild(child);
+    //shows the #more
+    document.getElementById('more').style.display = "block";
+    return false;
+}
+  var a = document.getElementById("showless");
+  a.onclick = function() {
+    //hides the #more
+    document.getElementById('more').style.display = "none";
+    //shows the #less
+    document.getElementById('less').style.display = "block";
+    return false;
+}
+}
+</script>
+
+</head>
+<body>
+
+<!--<div id="gototop">
+  <a href ="#top">top
+  </a>
+</div>
+-->
+<ul class="topnav">
+  <li><a href="/br275" title = "Ben Robinson's Homepage">Home</a></li>
+  <li><a href="/br275/research" title = "My Research">Research</a></li>
+  <li><a href="/br275/teaching" title = "Teaching">Teaching</a></li>
+  <li><a href="/br275/conferences" title = "Conferences Organised">Conferences</a></li>
+  <li><a href="/br275/PSS" title = "Postgraduate Seminar Series">PSS</a></li>
+  <li><a class="active" href="/br275/siam-ima" title = "Bath SIAM-IMA Student Chapter">SIAM-IMA</a></li>
+</ul>
+
+<h1>SIAM UKIE National Student Chapter Conference 2018</h1>
+
+
+<div class = "top">  
+  <h2>18-19 June 2018 &mdash; University of Bath</h2>
+</div>
+
+
+  
+<div id="total">
+<div id="contact">
+
+<!--
+<div id="tof3l">
+  <a href = "http://www.siam.org/" target="_blank"><img src="../siamblackjpeg.jpg"></a>
+</div>
+
+<div id="name">
+  <h1>SIAM UKIE National Student Chapter Conference</h1>
+  <h2 class = "desktop">18-19 June 2018 - University of Bath</h2>
+  <h2 class = "mobile">18-19 June 2018</h2>
+</div>
+
+
+<div id="tof3r">
+  <a href="http://www.bath.ac.uk/" target="_blank"><img src="../uob-logo-white-transparent.png" alt="University of Bath Logo"/></a>
+</div>
+-->
+
+<!--
+<div id="tof3">
+  <a href = "http://www.siam.org/" target="_blank"><img src="../siamblackjpeg.jpg"></a>
+  <a href="http://www.bath.ac.uk/" target="_blank"><img src="../uob-logo-white-transparent.png" alt="University of Bath Logo"/></a>
+</div>
+-->
+
+
+<div id="tof2">
+        <img src="snscc-conference-photo.jpg" alt="SNSCC Conference Photo"/></br>
+</div>
+
+
+<!--
+<div id = "tof3"><a href = "http://www.siam.org/" target="_blank"><img src="../../siamblackjpeg.jpg"></a></div>
+-->
+
+
+</div>
+
+<div id="menu">
+  <ul class = "secondnav">
+<!--
+    <li>
+      <a href="#Submissions">Submissions</a>
+    </li>
+-->
+<!--
+    <li>
+      <a href="#Registration">Registration</a>
+    </li>
+-->
+    <li>
+      <a href="#Programme">Programme</a>
+    </li>
+    <li>
+      <a href="#Abstracts">Plenary Talks</a>
+    </li>
+    <li>
+	  <a href = "#students">Student Talks</a>
+	</li>
+	<li>
+	  <a href = "#posters">Posters</a>
+	</li>
+	<li>
+		<a href = "#Participants">Participants</a>
+	</li>
+	<li>
+      <a href="#Sponsors">Sponsors</a>
+    </li>
+<!--
+    <li class = "odd">
+      <a href="#Venue">Venue</a>
+    </li>
+-->
+  </ul>
+</div>
+
+<div id="contenu">
+  <p>The University of Bath SIAM-IMA Student Chapter hosted the SIAM UKIE National Student Chapter Conference in 2018, bringing together students working in all areas of applied and industrial mathematics, and related fields, from across the UK and Ireland.</p>
+  <p>There were opportunities for students to showcase their research through a talk or a poster, and to hear talks by distinguished plenary speakers. The conference included 4 plenary talks, 29 contributed talks and 23 contributed posters, and was attended by 104 registered participants from 25 different institutions.</p>
+  <p>The organisers would like to thank all participants for making this conference a success.</p>
+
+
+<!--
+  <p><b><font color = "red">NEWS:</font></b> Full <a href = "./programme.pdf" target = "_blank">conference programme</a> now available.</p>
+  <p><b><font color = "red">NEWS:</font> Registration deadline extended to Thursday 31st May.</b> Posters still being accepted.</p>
+-->
+<!--
+  <p><b><font color = "red">NEWS:</font> Deadline for contibuted talks and posters extended to Friday 27th April.</b></p>
+  <p><b><font color = "red">NEWS:</font> Funding guaranteed for student speakers.</b> In some cases we may also be able to reimburse poster presenters.</p>
+-->
+<!--
+  <p class = "center"><a href = "https://goo.gl/forms/Rr8Bys7DWbx2fAcw2" target = "_blank" class = "button" color = "white">Register Now</a></p>
+-->  
+
+<p class = "center"><a href = "https://photos.app.goo.gl/uxiRGCDrUYQ3YBEV9" target = "_blank" class = "button" color = "white">Photo Gallery</a></p>
+
+<div id="tof4">
+	<img src="https://siamukie.files.wordpress.com/2017/01/universityofbath_2_pictocr.jpg" alt="University of Bath Campus"/>
+        <a href = "./poster.pdf" target = "_blank"><img src = "./snscc-poster-banner.jpg" alt="SNSCC 2018 Poster"/></a></br>
+</div>
+
+<div class="image">
+	<a href = "http://www.siam.org/" target="_blank"><img src="../siamblackjpeg.jpg"></a>
+	<a href = "https://www.ima.org.uk/" target="_blank"><img src="../IMA_RGB_logo.jpg"></a>
+</div>
+<!--
+<a id="Submissions" class="anchor"></a>
+<h1>Submissions</h1>
+  <p>Submissions for <b>contributed talks</b> and applications for <b>funding</b> are now closed.</p>
+  <p>We are still accepting <b>posters</b>. If you would like to present a poster, please note this in the <a href = "https://goo.gl/forms/Rr8Bys7DWbx2fAcw2" target = "_blank">registration form</a>.</p>
+-->
+<!--
+  <p><b><font color = "red">Deadline for contibuted talks and posters extended to Friday 27th April.</font></b></p>
+  <p>We are <b>now accepting submissions for contributed talks and posters</b>. Please submit your title and abstract via the <a href = "https://goo.gl/forms/Rr8Bys7DWbx2fAcw2" target = "_blank">registration form</a>.</p>
+  <p><b><font color = "red">Funding is available</font> to support students giving presentations.</b> If you would like to apply for this funding, please note this in the <a href = "https://goo.gl/forms/Rr8Bys7DWbx2fAcw2" target = "_blank">registration form</a>. We aim to refund travel and accommodation for all speakers, please indicate how much you expect your travel to cost. In some cases we may be able to reimburse poster presenters, please also indicate if you require funding.</p>
+  <p class = "center"><a href = "https://goo.gl/forms/Rr8Bys7DWbx2fAcw2" target = "_blank" class = "button" color = "white">Registration Form</a></p>
+  <p>The deadline for contributed talk abstracts is <del>Friday 30th March 2018</del> <b>Friday 27th April</b>, and for poster submissions <del>Friday 13th April 2018</del> <b>Friday 27th April</b>.</p>
+  <p>We follow both the <a href = "https://www.siam.org/about/inclusiveness.php" target = "_blank">SIAM Statement on Inclusiveness</a> and the <a href = "https://ima.org.uk/about-us/diversity-statements/" target = "_blank">IMA Diversity Statements</a>, and  we endeavour to create a welcoming and inclusive atmosphere at the conference, with a diverse range of participants. Students from groups which are underrepresented in the mathematical sciences are particularly encouraged to submit an abstract for a talk or poster.</p>
+-->
+<!--<a id="Registration" class="anchor"></a>
+<h1>Registration</h1>
+  <p>Registration is now closed. Students and staff based at the University of Bath but have not registered are more than welcome to drop in to any of the talks. However, we can only provide refreshments to those who registered before the deadline.</p>
+<!--  <p><b>Registration is free</b>. Please complete the <a href = "https://goo.gl/forms/Rr8Bys7DWbx2fAcw2" target = "_blank">registration form</a> by <del>Friday 18th May 2018</del> <font color="red"><b>Thursday 31st May</b></font>.</p>
+  <p class = "center"></br><a href = "https://goo.gl/forms/Rr8Bys7DWbx2fAcw2" target = "_blank" class = "button" color = "white">Registration Form</a></p>
+  <p></br>Please ensure that you register before the deadline if you want to attend, so that we have the correct numbers for catering purposes.</p>
+-->
+  <!--
+  <p>Please do circulate information about the conference, and download and distribute the <a href = "./poster.pdf" target = "_blank">conference poster</a>.</p>
+-->
+
+  
+<a id="Programme" class="anchor"></a>
+<h1>Programme
+</h1>
+
+<div>
+  <p>The programme will comprise sessions of student talks and posters, and four plenary talks from the folowing speakers:</p>
+  <ul>
+    <li><a href = "#blangiardo">Marta Blangiardo</a> (Imperial College London) &mdash; <em><a href = "#blangiardo">Modelling spatio-temporal data: methods, examples and challenges</a></em>;</li>
+    <li><a href = "#chandler-wilde">Simon Chandler-Wilde</a> (University of Reading) &mdash; <em><a href = "#chandler-wilde">Coercivity of second kind boundary integral equations on Lipschitz domains</a></em>;</li>
+    <li><a href = "#griffiths">Ian Griffiths</a> (University of Oxford) &mdash; <em><a href = "#griffiths">iPhones and Dysons: using fluid dynamics to tailor technology</a></em>;</li>
+    <li><a href = "#spillane">Nicole Spillane</a> (&Eacute;cole Polytechnique) &mdash; <em><a href = "#spillane">Domain Decomposition Methods with Adaptive Multipreconditioning</a></em>.</li>
+  </ul>
+  <p class="textleft">This is a summary of the programme. Download the full <a href = "./programme.pdf" target = "_blank">conference programme</a> for more details, including talk and poster abstracts.</p>
+</div>
+
+<div id="program">
+
+  <table class="program">
+		<tr>
+			<th colspan = "3">Monday 18th June </th>
+      <th colspan = "3">Tuesday 19th June </th>
+		</tr>
+    <tr>
+      <td class="nobord-left" rowspan = "2"></td>
+      <td colspan = "2" rowspan = "2" class="nobord"></td>
+      <td class = "left">08:30 &mdash; 09:00</td>
+      <td colspan = "2">COFFEE</br><em>4 West Atrium</em></td>
+    </tr>
+		<tr>
+      <td class = "left" rowspan = "2">09:00 &mdash; 10:15</td>
+      <td rowspan="2"><a href = "#3A"><b>SESSION 3A</b></a></br>Oliver Dunbar</br>Daoping Zhang</br></br><em>4 West 1.2</em></td>
+      <td rowspan = "2"><a href = "#3B"><b>SESSION 3B</b></a></br>Aoife Hill</br>Hannah Conroy Broderick</br>Paul Greaney</br></br><em>Wolfson Lecture Theatre</em></td>
+		</tr>
+      <td class = "left">10:00 &mdash; 10:30</td>
+      <td colspan = "2">COFFEE &amp; REGISTRATION</br></br><em>4 West Atrium</em></td>
+		<tr>
+		</tr>
+		<tr>
+      <td class = "left" rowspan = "3">10:30 &mdash; 11:45</td>
+      <td colspan = "2" rowspan = "3">Welcome</br></br><b>Plenary Talk - <a href = "#spillane">Nicole Spillane</a></b></br><em>Domain Decomposition Methods with Adaptive Multipreconditioning</em></br></br><em>University Hall</em></td>
+      <td class = "left">10:15 &mdash; 10:45</td>
+      <td colspan = "2">COFFEE</br><em>4 West Atrium</em></td>
+    </tr>
+			<tr>
+			<td class = "left" rowspan = "2">10:45 &mdash; 11:45</td>
+      <td colspan = "2" rowspan="2"><b>Plenary Talk - <a href = "#griffiths">Ian Griffiths</a></b></br><em>iPhones and Dysons: using fluid dynamics to tailor technology</em></br></br><em>University Hall</em></td>
+		</tr>
+		<tr>
+    </tr>
+		<tr>
+      <td class = "left" rowspan = "2">11:45 &mdash; 13:00</td>
+      <td rowspan="2"><a href = "#1A"><b>SESSION 1A</b></a></br>Sean Hon</br>Hassan Izanloo</br>Nikoleta Glynatsi</br></br><em>4 West 1.2</em></td>
+      <td rowspan = "2"><a href = "#1B"><b>SESSION 1B</b></a></br>Eoghan Staunton</br>Tsz Yan Leung</br>Wakil Sarfaraz</br></br><em>Wolfson Lecture Theatre</em></td>
+      <td class = "left" rowspan = "2">11:45 &mdash; 13:00</td>
+      <td rowspan="2"><a href = "#4A"><b>SESSION 4A</b></a></br>R&oacute;is&iacute;n Hill</br>Bartosz Jaroszkowski</br>Leonardo Rocchi</br></br><em>4 West 1.2</em></td>
+      <td rowspan = "2"><a href = "#4B"><b>SESSION 4B</b></a></br>Enrico Gavagnin</br>Lisa Maria Kreusser</br>Jehan Alswaihli</br></br><em>Wolfson Lecture Theatre</em></td>
+    </tr>
+		<tr>
+    </tr>
+    <tr>
+      <td class = "left" rowspan = "2">13:00 &mdash; 14:00</td>
+			<td colspan = "2" rowspan="2">LUNCH</br><em>4 West Atrium</em></td>
+      <td class = "left" rowspan = "2">13:00 &mdash; 14:00</td>
+      <td colspan = "2" rowspan="2">LUNCH</br><em>4 West Atrium</em></td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+      <td class = "left" rowspan = "2">14:00 &mdash; 15:15</td>
+			<td rowspan="2"><a href = "#2A"><b>SESSION 2A</b></a></br>Hang Liu</br>Luke Smallman</br>Adam Barker</br></br><em>4 West 1.2</em></td>
+      <td rowspan = "2"><a href = "#2B"><b>SESSION 2B</b></a></br>Danny Groves</br>Martina Cracco</br>Dane Grundy</br></br><em>Wolfson Lecture Theatre</em></td>
+      <td class = "left" rowspan = "2">14:00 &mdash; 15:15</td>
+      <td rowspan="2"><a href = "#5A"><b>SESSION 5A</b></a></br>Yiannis Simillides</br>Sarah Roggendorf</br>Anitgoni Kleanthous</br></br><em>4 West 1.2</em></td>
+      <td rowspan = "2"><a href = "#5B"><b>SESSION 5B</b></a></br>Qays Shakir</br>Helena Stage</br>Roberto Galizia</br></br><em>Wolfson Lecture Theatre</em></td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+      <td class = "left">15:15 &mdash; 15:45</td>
+      <td colspan = "2">COFFEE</br><em>4 West Atrium</em></td>
+      <td class = "left" rowspan = "4">15:15 &mdash; 16:30</td>
+      <td colspan = "2" rowspan = "4"><b>Plenary Talk - <a href = "#chandler-wilde">Simon Chandler-Wilde</a></b></br><em>Coercivity of second kind boundary integral equations on Lipschitz domains</em></br></br><em>University Hall</em></br></br>Close</td>
+    </tr>
+		<tr>
+    </tr>
+		<tr>
+			<td class = "left" rowspan = "2">15:45 &mdash; 16:45</td>
+      <td colspan = "2" rowspan = "2"><b>Plenary Talk - <a href = "#blangiardo">Marta Blangiardo</a></b></br><em>Modelling spatio-temporal data: methods, examples and challenges</em></br></br><em>University Hall</em></td>
+    </tr>
+		<tr>
+      <td colspan = "2" rowspan = "6" class="nobord"></td>
+		</tr>
+		<tr>
+			<td class = "left" rowspan = "3">16:45 &mdash; 18:30</td>
+      <td colspan = "2" rowspan = "3"><b><a href = "#posters">Poster Session</a></b></br>&amp;</br>Wine Reception</br></br><em>4 West Atrium</em></td>
+		</tr>
+		<tr>
+		</tr>
+    <tr>
+		</tr>
+		<tr>
+			<td class = "left">19:30</td>
+			<td colspan = "2">DINNER</br><em>Wessex Restaurant</em></td>
+		</tr>
+	</table>
+  <p>&nbsp;</p>
+  <p class = "center"><a href = "./programme.pdf" target = "_blank" class = "button" color = "white">Full Programme</a></p>
+  <p></br>In addition to the conference dinner on the Monday evening, we organised social events on both the Sunday and Tuesday, for any participants who wish to stay in Bath for an extra evening:</p>
+  <ul>
+    <li><b>Sunday evening:</b> Drinks in the Bell Inn, Walcot Street, from 20:00, to welcome participants arriving on Sunday.</li>
+    <li><b>Tuesday afternoon:</b> Walking tour of the city of Bath, setting off from the university campus at approximately 17:00.</li>
+  </ul>
+</div>
+
+
+<a id="Abstracts" class="anchor"></a>
+<div id="abstracts">
+<h1>Plenary Talks</h1>
+<a id = "blangiardo" class="anchor"></a>
+<h3><a href = "http://www.imperial.ac.uk/people/m.blangiardo" target = "_blank">Marta Blangiardo</a> (Department of Epidemiology and Biostatiscs, Imperial College London)</h3>
+<a href = "http://www.imperial.ac.uk/people/m.blangiardo" target = "_blank"><img src = "./blangiardo.jpeg" alt = "Marta Blangiardo"></a>
+<p><b>Modelling spatio-temporal data: methods, examples and challenges</b> (<a href = "./blangiardo.pdf" target = "_blank">PDF</a>)</p>
+<p><b><em>Monday 18th June, 15:45 &ndash; University Hall</em></b></p>
+<p>In this talk I will present how the Bayesian hierarchical framework is commonly used to model spatial and spatio-temporal data. I will first consider the space as discrete (small area framework) and introduce autoregressive structures, which can be used to account for spatial and temporal dependency. I will focus on different examples drawn from the epidemiological field.</p>
+<p>Then I will move to the case when space is continuous and introduce the geostatistics framework. Here I will present two examples drawn from epidemiology and environmental science.</p>
+<p>I will finish the talk presenting some of the (methodological and non) challenges which researchers face in this context.</p>
+<a id = "chandler-wilde" class="anchor"></a>
+<h3><a href = "http://www.personal.reading.ac.uk/~sms03snc/" target = "_blank">Simon Chandler-Wilde</a> (Department of Mathematics and Statistics, University of Reading)</h3>
+<a href = "http://www.personal.reading.ac.uk/~sms03snc/" target = "_blank"><img src = "./chandler-wilde.jpg" alt = "Simon Chandler-Wilde"></a>
+<div id = "scw-abs"><p><b>Coercivity of second kind boundary integral equations on Lipschitz domains</b> (<a href = "./chandler-wilde.pdf" target = "_blank">PDF</a>)</p>
+<p><b><em>Tuesday 19th June, 15:15 &ndash; University Hall</em></b></p>
+<p>Boundary integral equation methods are a well-established technique for solving linear elliptic partial differential equations. Second kind integral equation formulations, taking the form \(\phi + K\phi = g\), where \(K\) is a boundary integral operator, are attractive because they are well-conditioned. However, it is not known whether standard Galerkin numerical methods are stable and convergent for these formulations for Laplace's equation with Dirichlet boundary conditions on general Lipschitz domains. When the domain \(D\) is bounded, smooth, and convex the standard second kind integral equation formulation for this simplest case can be written in this form where \(K\) is a contraction, i.e. \(\|K\|<1\). Under certain other conditions on \(D\) it is known that \(K=L+C\), with \(\|L\|<1\) and \(C\) compact, but it is a long-standing conjecture that this holds for all Lipschitz \(D\). Both these conditions guarantee convergence of Galerkin approximation methods.</p>
+<p>But in this talk we exhibit examples of Lipschitz domains in 2D for which it does not hold that \(K\) is a compact perturbation of a contraction; in fact the so-called essential norm may be arbitrarily large. On the other hand, in a positive direction, we also exhibit new, modified versions of the standard second kind integral equation formulation which have the attractive property that the associated operators are coercive for all Lipschitz \(D\), so that every Galerkin method is convergent.</p>
+<p></br>Boundary integral equation methods are a well-established technique for solving linear elliptic partial differential equations. Second kind integral equation formulations, taking the form \(\phi + K\phi = g\), where \(K\) is a boundary integral operator, are attractive because they are well-conditioned. However, even in the simplest case (Laplace's equation on a bounded domain \(D\) with Dirichlet boundary conditions), it is not known whether standard Galerkin numerical methods, for example so-called boundary element methods based on finite-element-type approximations, are stable and convergent for these formulations for general Lipschitz domains.</p>
+<div id="more" style="display:none;">
+  <p>When \(D\) is smooth and convex the standard second kind formulation for this simplest case can be written in this form where \(K\), related to the standard double-layer potential operator, is a contraction, i.e. \(\|K\|<1\). Indeed, this observation was the basis of one of the first rigorous proofs of existence of  solution for elliptic PDEs by Carl Neumann, already in the 19th century. The condition \(\|K\|<1\), for \(K\) as an operator on \(L^2(\Gamma)\), guarantees convergence of Galerkin approximation methods, and in fact convergence holds under the weaker condition that \(K=L+C\) where \(\|L\|<1\) and \(C\) is compact, or the weaker condition still that \(I+K=L+C\) with \(L\) coercive and \(C\) compact. (An operator \(L\) on \(L^2(\partial D)\) is said to be coercive if, for some \(c>0\), \(|(L\psi,\psi)|\ \geq c\|\psi\|^2\), for all \(\psi\in L^2(\partial D)\), where \((\cdot,\cdot)\) is the inner product and \(\|\cdot\|\) the norm on \(L^2(\partial D)\)). It is known that \(K=L+C\), with \(\|L\|<1\) and \(C\) compact, if \(D\) is \(C^1\); if it is curvilinear polygon in 2D; if it is Lipschitz and convex; and if it is a general Lipschitz domain with sufficiently small Lipschitz constant; and it is a long-standing conjecture that this holds for all Lipschitz \(D\).</p>
+  <p>But in this talk we exhibit examples of Lipschitz domains in 2D for which it does not hold that \(K\) is a compact perturbation of a contraction; in fact the so-called essential norm may be arbitrarily large. These domains are also examples where \(I+K\) is not a compact perturbation of a coercive operator; in fact the so-called essential numerical range of \(K\) can contain arbitrarily large discs. On the other hand, in a positive direction, we also exhibit new, modified versions of the standard second kind integral equation formulation which have the attractive property that the associated operators are coercive (rather than the weaker coercive plus compact) for all Lipschitz \(D\), so that every Galerkin method is convergent. The proof of this is an application of Rellich-identity technology, an elementary but ubiquitous method of argument based on applications of the divergence theorem.</p>
+  <p><em>Note: Joint work with Euan Spence (Bath).</em></p>
+  <p><a href="#" id="showless">Show less</a></p>
+</div>
+<div id = "less">
+<p>&hellip; <a href="#" id="showmore">Show more</a></p>
+</div>
+</div>
+<a id = "griffiths" class="anchor"></a>
+<h3><a href = "http://people.maths.ox.ac.uk/griffit4/" target = "_blank">Ian M Griffiths</a> (Mathematical Institute, University of Oxford and Department of Mathematics, Princeton University)</h3>
+<a href = "http://people.maths.ox.ac.uk/griffit4/" target = "_blank"><img src = "./griffiths.JPG" alt = "Ian Griffiths"></a>
+<p><b>iPhones and Dysons: using fluid dynamics to tailor technology</b> (<a href = "./griffiths.pdf" target = "_blank">PDF</a>)</p>
+<p><b><em>Tuesday 19th June, 10:45 &ndash; University Hall</em></b></p>
+<p>As technology continues to advance, new strategies involving a range of scientific disciplines are required. Mathematicians can provide frameworks to predict operating regimes and manufacture techniques. In this talk we present two case studies: the fabrication of precision glass, for smartphones and new flexible devices; and the development of superior filters for vacuum cleaners. In each case we use asymptotic analysis to derive a model that determines the fabrication protocol required to produce a desired final product.</p>
+<a id = "spillane" class="anchor"></a>
+<h3><a href = "http://www.cmap.polytechnique.fr/~spillane/" target = "_blank">Nicole Spillane</a> (CNRS, CMAP, &Eacute;cole Polytechnique)</h3>
+<a href = "http://www.cmap.polytechnique.fr/~spillane/" target = "_blank"><img src = "./spillane.png" alt = "Nicole Spillane"></a>
+<p><b>Domain Decomposition Methods with Adaptive Multipreconditioning</b> (<a href = "./spillane.pdf" target = "_blank">PDF</a>)</p>
+<p><b><em>Monday 18th June, 10:30 &ndash; University Hall</em></b></p>
+<p>Domain decomposition methods are a family of parallel solvers for large linear systems. They all share the idea of approximating the inverse of some matrix by a sum of local inverses (in the so-called subdomains). I will present some classical domain decomposition methods, their limitations and some recent efforts to improve their robustness and scalability so that they can be applied to problems arising from real life simulations.</p>
+<p>More precisely, I will present the method of adaptive multipreconditioning. This is a modification of the iterative solver (the preconditioned conjugate gradient algorithm). Instead of one single preconditioner, a family of preconditioners is applied at each iteration, each corresponding to one of the subdomains. This significantly increases the size of the minimization space and consequently accelerates convergence. I will introduce the method, discuss its analysis and show numerical results obtained in collaboration with C. Bovet, P. Gosselet and A. Parret-Fréaud.</p>
+
+<h1><a id = "students" class = "anchor"></a>Student Talks</h1>
+<p class = "textleft">Abstracts are available in the <a href = "./programme.pdf" target = "_blank">conference programme</a>.</p>
+<h2><a id = "1A" class = "anchor"</a>></a>Session 1A &ndash; 4 West 1.2 &ndash; 11:45&mdash;13:00, Monday 18th June</h2>
+<h3><a id = "hon" class = "anchor"></a>Sean Hon (University of Oxford)</h3><p><b>Circulant preconditioners for functions of Toeplitz matrices</b></p>
+<h3><a id = "izanloo" class = "anchor"></a>Hassan	Izanloo (Cardiff University)</h3><p><b>\((P,w)\)-Partition and alternating sign matrices</b> (<a href = "./izanloo.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "glynatsi" class = "anchor"></a>Nikoleta  E.	Glynatsi (Cardiff University)</h3><p><b>Training memory one strategies for the Prisoner's Dilemma</b> (<a href = "./glynatsi.pdf" target = "_blank">PDF</a>)</p>
+<h2><a id = "1B" class = "anchor"</a>></a>Session 1B &ndash; 4 West 1.7 (Wolfson Lecture Theatre) &ndash; 11:45&mdash;13:00, Monday 18th June</h2>
+<h3><a id = "staunton" class = "anchor"></a>Eoghan	Staunton (National University of Ireland, Galway)</h3><p><b>Noise and Bistability in the Square Root Map</b> (<a href = "./staunton.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "leung" class = "anchor"></a>Tsz Yan	Leung (University of Reading)</h3><p><b>Finite or infinite predictability horizon?</b> (<a href = "./leung.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "sarfaraz" class = "anchor"></a>Wakil	Sarfaraz (University of Sussex)</h3><p><b>The geometric influence of domain-size on the dynamics of reaction-diffusion systems with applications in pattern formation</b> (<a href = "./sarfaraz.pdf" target = "_blank">PDF</a>)</p>
+<h2><a id = "2A" class = "anchor"</a>></a>Session 2A &ndash; 4 West 1.2 &ndash; 14:00&mdash;15:15, Monday 18th June</h2>
+<h3><a id = "liu" class = "anchor"></a>Hang	Liu (Lancaster University)</h3><p><b>On the computation and application of M-estimators and its bootstrapped version in GARCH models</b></p>
+<h3><a id = "smallman" class = "anchor"></a>Luke	Smallman (University of Cardiff)</h3><p><b>Sparse Principal Component Analysis for Exponential Family Data</b> (<a href = "./smallman.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "barker" class = "anchor"></a>Adam	Barker (University of Reading)</h3><p><b>Transience and Recurrence of Markov Processes with Constrained Local Time</b> (<a href = "./barker.pdf" target = "_blank">PDF</a>)</p>
+<h2><a id = "2B" class = "anchor"</a>></a>Session 2B &ndash; 4 West 1.7 (Wolfson Lecture Theatre)  &ndash; 14:00&mdash;15:15, Monday 18th June</h2>
+<h3><a id = "groves" class = "anchor"></a>Danny Groves (Cardiff University)</h3><p><b>Droplet Spreading, Chemically Treated Surfaces and Mathematics</b> (<a href = "./groves.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "cracco" class = "anchor"></a>Martina	Cracco (Cardiff University)</h3><p><b>Linear stability and transient behaviour of viscoelastic fluids in boundary layers</b> (<a href = "./cracco.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "grundy" class = "anchor"></a>Dane	Grundy (University of East Anglia)</h3><p><b>The Effect of Surface Stress on Interfacial Solitary Waves</b> (<a href = "./grundy.pdf" target = "_blank">PDF</a>)</p>
+<h2><a id = "3A" class = "anchor"</a>></a>Session 3A &ndash; 4 West 1.2 &ndash; 09:25&mdash;10:15, Tuesday 19th June</h2>
+<h3><a id = "dunbar" class = "anchor"></a>Oliver	Dunbar (University of Warwick)</h3><p><b>What Lies Beneath?</b> (<a href = "./dunbar.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "zhang" class = "anchor"></a>Daoping	Zhang (University of Liverpool)</h3><p><b>Variational Diffeomorphic Models for Image Registration</b> (<a href = "./zhang.pdf" target = "_blank">PDF</a>)</p>
+<h2><a id = "3B" class = "anchor"</a>></a>Session 3B &ndash; 4 West 1.7 (Wolfson Lecture Theatre)  &ndash; 09:00&mdash;10:15, Tuesday 19th June</h2>
+<h3><a id = "hill-a" class = "anchor"></a>Aoife	Hill (National University of Ireland, Galway)</h3><p><b>Modelling the evolving ductility of biodegradable polymers</b> (<a href = "./hill-aoife.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "conroy" class = "anchor"></a>Hannah	Conroy Broderick (National University of Ireland, Galway)</h3><p><b>Wrinkling in soft dielectric plates</b> (<a href = "./conroy-broderick.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "greaney" class = "anchor"></a>Paul	Greaney (National University of Ireland, Galway)</h3><p><b>Inhomogeneous Thinning and Breakdown of Thin Dielectric Elastomers</b> (<a href = "./greaney.pdf" target = "_blank">PDF</a>)</p>
+<h2><a id = "4A" class = "anchor"</a>></a>Session 4A &ndash; 4 West 1.2 &ndash; 11:45&mdash;13:00, Tuesday 19th June</h2>
+<h3><a id = "hill-r" class = "anchor"></a>R&oacute;is&iacute;n Hill (National University of Ireland, Galway)</h3><p><b>Adaptive a posteriori meshes for differential equations</b> (<a href = "./hill-roisin.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "jaroszkowski" class = "anchor"></a>Bartosz	Jaroszkowski (University of Sussex)</h3><p><b>Numerical solution of Isaacs equation</b> (<a href = "./jaroszkowski.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "rocchi" class = "anchor"></a>Leonardo	Rocchi (University of Birmingham)</h3><p><b>An efficient adaptive algorithm for elliptic problems with random input data</b> (<a href = "./rocchi.pdf" target = "_blank">PDF</a>)</p>
+<h2><a id = "4B" class = "anchor"</a>></a>Session 4B &ndash; 4 West 1.7 (Wolfson Lecture Theatre)  &ndash; 11:45&mdash;13:00, Tuesday 19th June</h2>
+<h3><a id = "gavagnin" class = "anchor"></a>Enrico	Gavagnin (University of Bath)</h3><p><b>The invasion speed of cell migration models with a multi-stage  cell-cycle representation</b> (<a href = "./gavagnin.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "kreusser" class = "anchor"></a>Lisa Maria 	Kreusser (University of Cambridge)</h3><p><b>An Anisotropic Interaction Model for Simulating Fingerprints</b> (<a href = "./kreusser.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "alswaihli" class = "anchor"></a>Jehan	Alswaihli (University of Reading)</h3><p><b>Kernel Reconstruction for Delayed Neural Field Equations</b></p>
+<h2><a id = "5A" class = "anchor"</a>></a>Session 5A &ndash; 4 West 1.2 &ndash; 14:00&mdash;15:15, Tuesday 19th June</h2>
+<h3><a id = "simillides" class = "anchor"></a>Yiannis	Simillides (University College London)</h3><p><b>FEniCS.jl, solving PDE's using Julia</b> (<a href = "./simillides.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "roggendorf" class = "anchor"></a>Sarah	Roggendorf (University of Nottingham)</h3><p><b>Eliminating Gibbs Phenomenon: A non-linear Petrov-Galerkin method for convection-dominated problems</b> (<a href = "./roggendorf.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "kleanthous" class = "anchor"></a>Antigoni	Kleanthous (University College London)</h3><p><b>Light scattering by complex ice crystals using the Boundary Element Method</b> (<a href = "./kleanthous.pdf" target = "_blank">PDF</a>)</p>
+<h2><a id = "5B" class = "anchor"</a>></a>Session 5B &ndash; 4 West 1.7 (Wolfson Lecture Theatre)  &ndash; 14:00&mdash;15:15, Tuesday 19th June</h2>
+<h3><a id = "shakir" class = "anchor"></a>Qays	Shakir (National University of Ireland, Galway)</h3><p><b>\((2,2)\)-Tight Surface Graphs</b> (<a href = "./shakir.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "stage" class = "anchor"></a>Helena	Stage (University of Manchester)</h3><p><b>Anomalous metapopulation dynamics on scale-free networks</b> (<a href = "./stage.pdf" target = "_blank">PDF</a>)</p>
+<h3><a id = "galizia" class = "anchor"></a>Roberto	Galizia (National University of Ireland, Galway)</h3><p><b>Phase transitions of multistable dynamical networks</b></p>
+
+<h1><a id = "posters" class = "anchor"></a>Posters</h1>
+<p class = "textleft">Abstracts are available in the <a href = "./programme.pdf" target = "_blank">conference programme</a>.</p>
+<h2>Poster Session &ndash; 4 West Atrium &ndash; 16:45&mdash;18:30, Monday 18th June
+<h3>Jehan	Alswaihli (University of Reading)</h3><p><b>Kernel Reconstruction for Delayed Neural Field Equations</b></p>
+<h3>Blake	Ashworth (University of Sussex)</h3><p><b>Discretisation of Wasserstein Gradient Flows for Solving Higher Order Nonlinear Partial Differential Equations</b></p>
+<h3>Marton Benedek (University of Southampton)</h3><p><b>Finding and verifying the nucleolus of cooperative games</b></p>
+<h3>Hanson	Bharth (University of Warwick)</h3><p><b>Machine Learning for Image Analysis</b></p>
+<h3>Felix Diewald (University of Nottingham)</h3><p><b>Navier-Stokes-Korteweg Simulations of Dynamic Wetting using the PeTS Equation of State</b></p>
+<h3>Raffaele	Grande (Cardiff University)</h3><p><b>An Introduction to Horizontal Mean Curvature Flow</b></p>
+<h3>Danny	Groves (Cardiff University)</h3><p><b>Droplet Spreading, Chemically Treated Surfaces and Mathematics</b></p>
+<h3>Dane	Grundy (University of East Anglia)</h3><p><b>Decay of Solitary Waves</b></p>
+<h3>Tadas	Krikstanavicius (University of Strathclyde)</h3><p><b>Active Subspaces in Networks</b></p>
+<h3>David	Kohan Marzag&atilde;o (King's College London)</h3><p><b>Biased Consensus Games</b></p>
+<h3>Antiopi Koronaki (University of Bath)</h3><p><b>Topology optimization of frame structures</b></p>
+<h3>Alex	Mackay (Cardiff University)</h3><p><b> Nonisothermal & Compressible Viscoelastic fluid Modelling</b></p>
+<h3>Scott	Morgan (Cardiff University)</h3><p><b>Stability of Oscillatory Rotating Disk Boundary Layers</b></p>
+<h3>Gian Maria	Negri Porzio (University of Manchester)</h3><p><b>A Contour Integral Eigensolver for Dense Nonlinear Eigenvalue Problems</b></p>
+<h3>Lizzi Pitt (University of Bath)</h3><p><b>Optimising 'First In Human' trials through dynamic programming</b></p>
+<h3>Qays	Shakir (National University of Ireland, Galway)</h3><p><b>Tightness of Surface Graphs</b></p>
+<h3>Cameron	Smith (University of Bath)</h3><p><b>The auxiliary region method: simulating second-order systems</b></p>
+<h3>Annika	Stechemesser (University of Warwick)</h3><p><b>Cancer Research using Drop-seq data</b></p>
+<h3>Kris 	van der Zee (University of Nottingham)</h3><p><b>Solving PDEs using Residual Minimization in Discrete Dual Non-Hilbert Norms</b></p>
+<h3>Hayley	Wragg (University of Bath)</h3><p><b>Mathematically Modelling Indoor WiFi Propagation</b></p>
+
+<div id="participants">
+<a id="Participants" class = "anchor"></a>
+<h1>Participants</h1>
+
+  <table class ="part" width="95%" align="center">
+  <tr>
+<td>Waleed Ali (University of Bath)</td>	
+<td>Jehan Alswaihli (University of Reading)</td>	
+<td>Nifeen Altaweel (Lancaster University)</td>	</tr><tr>
+<td>Max Antson (University of Bath)</td>	
+<td>Blake Ashworth (University of Sussex)</td>	
+<td>Adam Barker (University of Reading)</td>	</tr><tr>
+<td>Marton Benedek (University of Southampton)</td>	
+<td>Jack Betteridge (University of Bath)</td>	
+<td>Hanson Bharth (University of Warwick)</td>	</tr><tr>
+<td>Sayan Biswas (University of Bath)</td>	
+<td>Marta Blangiardo (Imperial College London)</td>	
+<td>Beth Boulton (University of Bath)</td>	</tr><tr>
+<td>Aoibheann Brady (University of Bath)</td>	
+<td>Vlad Brebeanu (University of Bath)</td>	
+<td>Chris Budd (University of Bath)</td>	</tr><tr>
+<td>Mehmet Siddik  Cadirci  (Cardiff University)</td>	
+<td>Alice Callegaro (University of Bath)</td>	
+<td>James Campbell (Cardiff University )</td>	</tr><tr>
+<td>Joel Cawte (University of Bath)</td>	
+<td>Simon Chandler-Wilde (University of Reading)</td>	
+<td>Kei Tsi Daniel Cheng (Institute of Mathematics and its Applications)</td>	</tr><tr>
+<td>Hannah Conroy Broderick (National University of Ireland, Galway)</td>	
+<td>Martina Cracco (Cardiff University)</td>	
+<td>Francisco de Melo Vir&iacute;ssimo (University of Bath)</td>	</tr><tr>
+<td>Zoe Dennison (University of Bath)</td>	
+<td>Felix Diewald (University of Nottingham)</td>	
+<td>Joey Dixon (MyLife Digital)</td>	</tr><tr>
+<td>Zhao Dong (University of Bath)</td>	
+<td>Oliver Dunbar (University of Warwick)</td>	
+<td>Rebecca Ellis (University of Bath)</td>	</tr><tr>
+<td>Thomas Finn (University of Bath)</td>	
+<td>Melina Freitag (University of Bath)</td>	
+<td>Roberto Galizia (National University of Ireland, Galway)</td>	</tr><tr>
+<td>Enrico Gavagnin (University of Bath)</td>	
+<td>Adam George (University of Bath)</td>	
+<td>Nikoleta  E. Glynatsi (Cardiff University)</td>	</tr><tr>
+<td>Raffaele Grande (Cardiff University)</td>	
+<td>Paul Greaney (National University of Ireland, Galway)</td>	
+<td>Dan Green (University of Bath)</td>	</tr><tr>
+<td>Matthew Griffith (University of Bath)</td>	
+<td>Ian Griffiths (University of Oxford)</td>	
+<td>Danny Groves (Cardiff University)</td>	</tr><tr>
+<td>Dane Grundy (University of East Anglia)</td>	
+<td>Leonard Hardiman (University of Bath)</td>	
+<td>Elli Heyes (University of Bath)</td>	</tr><tr>
+<td>Aoife Hill (National University of Ireland, Galway)</td>	
+<td>R&oacute;is&iacute;n Hill (National University of Ireland, Galway)</td>	
+<td>Sean Hon (University of Oxford)</td>	</tr><tr>
+<td>Emma Horton (University of Bath)</td>	
+<td>Emily Hunt (University of Bath)</td>	
+<td>Hassan Izanloo (Cardiff University)</td>	</tr><tr>
+<td>Bartosz Jaroszkowski (University of Sussex)</td>	
+<td>Natasha Javed (University of Bath)</td>
+</tr>
+<tr>
+<td>Nadeen Khaleel (University of Bath)</td>	
+<td>Matthias Klar (University of Bath)</td>	
+<td>Antigoni Kleanthous (UCL)</td>	</tr><tr>
+<td>David Kohan Marzag&atilde;o (King's College London)</td>	
+<td>Antiopi Koronaki (University of Bath)</td>	
+<td>Lisa Maria  Kreusser (University of Cambridge)</td>	</tr><tr>
+<td>Tadas Krikstanavicius (University of Strathclyde)</td>	
+<td>Daniel Lagos (University of Bristol)</td>	
+<td>Andrea Lelli (University of Bath)</td>	</tr><tr>
+<td>Tsz Yan Leung (University of Reading)</td>	
+<td>Hang Liu (Lancaster University)</td>	
+<td>Bas Lodewijks (University of Bath)</td>	</tr><tr>
+<td>Alex Mackay (Cardiff University )</td>	
+<td>Arron Mallinson-Pocock (University of Bath)</td>	
+<td>Christine Marshall (National University of Ireland, Galway)</td>	</tr><tr>
+<td>Amy Middleton (University of Bath)</td>	
+<td>Sam Moore (University of Bath)</td>	
+<td>Scott Morgan (Cardiff University)</td>	</tr><tr>
+<td>Kgomotso Morupisi (University of Bath)</td>	
+<td>Gian Maria Negri Porzio (The University of Manchester)</td>	
+<td>Daniel Ng (University of Bath)</td>	</tr><tr>
+<td>Matt Parkinson (University of Bath)</td>	
+<td>Robbie Peck (University of Bath)</td>	
+<td>Owen Pembery (University of Bath)</td>	</tr><tr>
+<td>Aaron  Pim (University of Bath)</td>	
+<td>Lizzi Pitt (University of Bath)</td>	
+<td>Martin Prigent (University of Bath)</td>	</tr><tr>
+<td>Benjamin Robinson (University of Bath)</td>	
+<td>Leonardo Rocchi (University of Birmingham)</td>	
+<td>Sarah Roggendorf (University of Nottingham)</td>	</tr><tr>
+<td>Wakil Sarfaraz (University of Sussex)</td>	
+<td>Qays Shakir (National University of Ireland, Galway)</td>	
+<td>Yiannis Simillides (UCL)</td>	</tr><tr>
+<td>Luke Smallman (Cardiff University)</td>	
+<td>Tom Smith (University of Bath)</td>	
+<td>Cameron Smith (University of Bath)</td>	</tr><tr>
+<td>Nicole Spillane (&Eacute;cole Polytechnique)</td>	
+<td>Helena Stage (The University of Manchester)</td>	
+<td>Eoghan Staunton (National University of Ireland, Galway)</td>	</tr><tr>
+<td>Annika Stechemesser (University of Warwick)</td>	
+<td>Ruaridh Thomson (MyLife Digital)</td>	
+<td>Erica Tyson (Institute of Mathematics and its Applications)</td>	</tr><tr>
+<td>Sunny Vaghela (King's College London)</td>	
+<td>Kris  van der Zee (University of Nottingham)</td>	
+<td>Abigail Verschueren (University of Bath)</td>	</tr><tr>
+<td>Byron Williams (Cardiff University)</td>	
+<td>Hayley Wragg (University of Bath)</td>	
+<td>Fedra Zaribaf (University of Bath)</td>	</tr><tr>
+<td>Daoping Zhang (University of Liverpool)</td>	
+<td>Lizhi Zhang (University of Bath)</td>
+  </tr>
+  </table>
+<p class = "textleft"></br><em>We follow both the <a href = "https://www.siam.org/about/inclusiveness.php" target = "_blank">SIAM Statement on Inclusiveness</a> and the <a href = "https://ima.org.uk/about-us/diversity-statements/" target = "_blank">IMA Diversity Statements</a>, and  we endeavour to create a welcoming and inclusive atmosphere at the conference, with a diverse range of participants. Students from groups which are underrepresented in the mathematical sciences are particularly encouraged to attend.</em></p>
+  
+</div>
+
+</div>
+
+<a id = "Sponsors" class="anchor"></a>
+<h1>Sponsors</h1>
+<p>This conference is kindly supported by grants from:
+  <ul>
+    <li><b><a href = "http://siam.org/" target="_blank">Society for Industrial and Applied Mathematics (SIAM)</a>;</b></li>
+    <li><b><a href = "https://www.ima.org.uk/" target = "_blank">Institute of Mathematics and its Applications (IMA)</a>;</b></li>
+    <li><b><a href = "http://www.bath.ac.uk/departments/doctoral-college/" target = "_blank">Doctoral College, University of Bath</a></b>;</li>
+    <li><b><a href = "http://www.bath.ac.uk/imi/" target = "_blank">Institute for Mathematical Innovation (IMI), University of Bath</a></b>;</li>
+    <li><b><a href = "http://www.bath.ac.uk/math-sci" target="_blank">Department of Mathematical Sciences, University of Bath</a></b>.</li>
+  </ul>
+</p>
+<p>We are also grateful for support from our industrial sponsors:
+  <ul>
+    <li><b><a href = "https://www.cfm.fr/" target = "_blank">Capital Fund Management (CFM)</a></b>;</li>
+    <li><b><a href = "https://www.mylifedigital.co.uk/" target = "_blank">MyLife Digital</a></b>;</li>
+    <li><b><a href = "https://www.overleaf.com/" target = "_blank">Overleaf</a></b>.</li>
+  </ul>
+</p>
+<div id="imagesMain">
+	<a href = "http://siam.org/" target="_blank"><img src="../siamblackjpeg.jpg" alt="SIAM Logo"></a>
+  <a href = "https://www.ima.org.uk/" target="_blank"><img src="../IMA_RGB_logo.jpg" alt = "IMA Logo"></a></br>
+  <a href = "http://www.bath.ac.uk/departments/doctoral-college/" target = "_blank"><img src = "../Doctoral-College-logo.jpg" alt = "Doctoral College Logo"></a>
+  <a href = "http://www.bath.ac.uk/imi/" target = "_blank"><img src="../IMI-logo.gif" alt="IMI Logo"></a>
+	<a href = "http://www.bath.ac.uk/math-sci" target = "_blank"><img src="../Dep-logo.jpg" alt="Department of Mathematical Sciences Logo"/></a>
+</div>
+<div id="imagesMain1">
+  <a href = "https://www.cfm.fr/" target = "_blank"><img src="../CFM-logo.jpg" alt="CFM Logo"/></a>
+  <a href = "https://www.mylifedigital.co.uk/" target = "_blank"><img src = "../mylifedigital-logo.png" alt = "MyLife Digital Logo"></a>
+  <a href = "https://www.overleaf.com/" target = "_blank"><img src = "../Overleaf_logo.jpg" alt = "Overleaf Logo"></a>
+</div>
+
+<a id="Venue" class="anchor"></a>
+<h1>Venue <!--<a href="https://drive.google.com/open?id=10ek7D1_gWv6N-uQwfz53KIfi2qo&usp=sharing">[Map of hotels and bus stops]</a>--></h1>
+
+<p>The conference was held in the Department of Mathematical Sciences (marked as 4W on this <a href="http://www.bath.ac.uk/publications/claverton-down-campus-3d-map/attachments/campus-3d-map-with-key.pdf" target="_blank">campus map</a>).</p>
+<p>The address is:</p>
+<p style="text-indent:0em; padding-left:3em;">Department of Mathematical Sciences</br>
+4 West</br>
+University of Bath</br>
+Claverton Down</br>
+Bath</br>
+BA2 7AY</p>
+<p>See the university's guide on <a href="http://www.bath.ac.uk/travel-advice/location-maps/" target="_blank">how to find us</a>.</p>
+<p align = "center" id = "map"><iframe src="https://www.google.com/maps/d/u/1/embed?mid=1mIveCbQC3ozcZwBo1ocDbIVeZxgnfOs8" width="640" height="480"></iframe></p>
+<p id = "map-mob">Also see this <a href = "https://www.google.com/maps/d/viewer?mid=1mIveCbQC3ozcZwBo1ocDbIVeZxgnfOs8&usp=sharing" target = "_blank">map of the key conference locations and transport links</a>.</p>
+<h2>Arriving by train</h2>
+<p>If you are arriving by train, you should arrive at Bath Spa train stations. You can then take the U1 bus to the university from Dorchester Street (opposite the station to the left), or walk to the university in 30-40 minutes (up quite a steep hill!).</p>
+<h2>Arriving into Bristol Airport</h2>
+<p>Coming from Bristol airport, take the A4 bus to Bath, which brings you to the train station, from where you can walk or take a bus, as described above.</p>
+<h2>Arriving by car</h2>
+<p>If you plan to drive to the university, limited visitor parking spaces are available on campus. See the university's guide to <a href="http://www.bath.ac.uk/corporate-information/visitor-car-parking-on-our-claverton-down-campus/" target="_blank">parking on campus</a>.</p>
+
+<p class = "footer">This page is maintained by <a href="/br275", target="_blank">Ben Robinson</a>.</p>
+
+</body>
+</html>
+
