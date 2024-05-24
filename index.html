@@ -7,38 +7,38 @@
   <style type="text/css">
     h1 { border-bottom: medium solid; text-align: center;}
     .footer { border-top: thin solid; text-align: center; }
-    body { background: lightgray; color: black; } /* main page */
-    :link { background: transparent; color: #575097; } /* unvisited links */
-    :visited { background: transparent; color: #575097; } /* visited links */
+    body { background: #94a69f78; color: black; } /* main page */
+    :link { background: transparent; color: #2D5A79 } /* unvisited links */
+    :visited { background: transparent; color: #2D5A79; } /* visited links */
     :link:hover, :visited:hover, :link:active, :visited:active
-      { background: transparent; color: #555555; } /* active links */
-    h1 { background: transparent; color: #575097; border-color: #000000; }
-    h2 { background: transparent; color: #575097; border-color: #000000; }
-    h3 { background: transparent; color: #575097; border-color: #000000; }
-    dt { background: transparent; color: #575097; }
+      { background: transparent; color: #21445B; } /* active links */
+    h1 { background: transparent; color: #003c56; border-color: #2D5A79; }
+    h2 { background: transparent; color: #003c56; border-color: #000000; }
+    h3 { background: transparent; color: #003c56; border-color: #000000; }
+    dt { background: transparent; color: #003c56; }
     .footer { padding: 0.1em 0.2em; }
     dt { margin-top: 0.5em; }
     /*fonts*/
-    body { font-family: Verdana, Arial, sans-serif; }
+    body { font-family: Verdana, Arial, sans-serif; font-weight: 80; }
     h1 { font-weight: 100; letter-spacing: 0.2em; margin-top: 60px;}
     dt { font-weight: bold; display: run-in; }
     p {text-align: justify;}
     .footer { font-size: smaller; font-style: italic; }
     /*img*/
     p img { float: right; 
-padding-left: 1em;
-padding-bottom: 1em;
+padding-left: 3em;
+padding-bottom: 3em;
 mix-blend-mode: multiply;}
 	img.main { float: middle;
 	padding-left: 1em;
 padding-bottom: 1em;}
 /*more style stuff*/
-    p em {color: #575097}
-	table em {color: #575097;}
+    p em {color: #003c56 }
+	table em {color: #003c56;}
     div.main {
     max-width:900px;
     margin: auto;
-    border-top: solid #333;
+    border-top: solid #21445B;
     clear: right;
 }
 
@@ -53,7 +53,7 @@ ul.topnav {
     margin: auto;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #21445B;
     text-align: center;
     position: fixed;
     top: 0;
@@ -67,16 +67,16 @@ ul.topnav li {float: left;
 
 ul.topnav li a {
     display: block;
-    color: white;
+    color: #94a69f;
     text-align: center;
     padding: 14px 0px;
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #575097;}
-ul.topnav li a:hover {color: black;}
+ul.topnav li a:hover:not(.active) {background-color: #21445B;}
+ul.topnav li a:hover {color: #94a69f90;}
 
-ul.topnav li a.active {background-color: #575097;}
+ul.topnav li a.active {background-color: #003c56;}
 
 ul.topnav li.right {float: right;}
 
@@ -114,7 +114,7 @@ tbody tr td:first-child {
 
 
 <ul class="topnav">
-  <li><a class="active" href="#" title = "Ben Robinson's Homepage">Home</a></li>
+  <li><a  href="#" title = "Ben Robinson's Homepage">Home</a></li>
   <li><a href="#publications" title = "Publications">Publications</a></li>
   <li><a href="#talks" title = "Talks">Talks</a></li>
   <li><a href="#teaching" title = "Teaching">Teaching</a></li>
@@ -124,13 +124,13 @@ tbody tr td:first-child {
 <h1>Benjamin A. Robinson</h1>
 
 <div class = "top">
-<p><img src = "robinson-photo.jpeg" alt = "Benjamin A. Robinson" title = "Ben Robinson" width = "250">
+<p><img src = "robinson-photo.png" alt = "Benjamin A. Robinson" title = "Ben Robinson" width = "200">
   My name is Ben Robinson and I am a Postdoc&ndash;Assistant in the <a href = "https://www.aau.at/en/statistics/" target = "_blank">Department of Statistics</a> 
   at the Alpen&ndash;Adria University of Klagenfurt.
   I am working in the <em>Stochastic Processes</em> group of <a href = "https://www-stat.aau.at/ms/index.html" target = "_blank">Michaela Sz&ouml;lgyenyi</a>.
 </p>
 <p>My research interests lie in the areas of applied probability, stochastic analysis, and mathematical finance. In particular, my current research focuses on <em>optimal transport</em> with stochastic constraints, finding <em>mimicking martingales</em> for given marginal data, and the <em>numerical analysis</em> of <em>stochastic differential equations</em>.</p>
-<p>From November 2020 to March 2024, I was a postdoc in the group of <a href = "/~mathias" target = "_blank">Mathias Beiglb&ouml;ck</a>  and <a href = "https://www.mat.univie.ac.at/~schachermayer/" target = "_blank">Walter Schachermayer</a>
+<p>From November 2020 to March 2024, I was a postdoc in the group of <a href = "https://www.mat.univie.ac.at/~mathias" target = "_blank">Mathias Beiglb&ouml;ck</a>  and <a href = "https://www.mat.univie.ac.at/~schachermayer/" target = "_blank">Walter Schachermayer</a>
   in the <a href = "https://mathematik.univie.ac.at/forschung/stochastik-und-finanzmathematik/forschungsgruppe/" target = "_blank">Mathematical Finance and Probability Theory Group</a> at the University of Vienna.
 </br>I obtained my PhD in 2020 from the University of Bath under the supervision of <a href = "http://www.maths.bath.ac.uk/~mapamgc/" target = "_blank">Alexander Cox</a>. Here is my <a href = "./robinson-thesis.pdf" target = "_blank">thesis</a>, titled <em>Stochastic control problems for multidimensional martingales</em>.</p>
 <p>You can contact me at ben.robinson 'at' univie.ac.at, or see my full <a href="#contact">contact details</a> below.</p>
@@ -204,7 +204,7 @@ tbody tr td:first-child {
   </tr>
 	<tr>
 		<td>2020&ndash;2024</td>
-		<td><b>Postdoc</b> in the group of <a href = "/~mathias" target = "_blank">Mathias Beiglb&ouml;ck</a> and <a href = "https://www.mat.univie.ac.at/~schachermayer/" target = "_blank">Walter Schachermayer</a> in the <a href = "https://mathematik.univie.ac.at/forschung/stochastik-und-finanzmathematik/forschungsgruppe/" target = "_blank">Mathematical Finance and Probability Theory Group</a>, Faculty of Mathematics, University of Vienna.</td>
+		<td><b>Postdoc</b> in the group of <a href = "https://www.mat.univie.ac.at/~mathias" target = "_blank">Mathias Beiglb&ouml;ck</a> and <a href = "https://www.mat.univie.ac.at/~schachermayer/" target = "_blank">Walter Schachermayer</a> in the <a href = "https://mathematik.univie.ac.at/forschung/stochastik-und-finanzmathematik/forschungsgruppe/" target = "_blank">Mathematical Finance and Probability Theory Group</a>, Faculty of Mathematics, University of Vienna.</td>
 	</tr>
 	<tr>
 		<td>2020</td>
