@@ -25,15 +25,19 @@
     p {text-align: justify;}
     .footer { font-size: smaller; font-style: italic; }
     /*img*/
-    p img { float: right; 
+	img.main {float: right; 
 padding-left: 3em;
 padding-top: 5ex;
 padding-bottom: 5ex;
 mix-blend-mode: multiply;
-clear: both}
-	img.main { float: middle;
-	padding-left: 1em;
-padding-bottom: 2ex;}
+clear: both;
+  width: 100%;
+  max-width: 250px;}
+  img.poster {
+    float: middle;
+    width: 100%;
+    max-width: 400px;
+  }
 /*more style stuff*/
     p em {color: #003c56 }
 	table em {color: #003c56;}
@@ -129,7 +133,7 @@ tbody tr td:first-child {
 <h1>Benjamin A. Robinson</h1>
 <div class = "top">
 <p>
-<img src = "robinson-photo.png" alt = "Benjamin A. Robinson" title = "Ben Robinson" width = "250">
+<img class = main src = "robinson-photo.png" alt = "Benjamin A. Robinson" title = "Ben Robinson">
   My name is Ben Robinson and I am a Postdoc-Assistant in the <a href = "https://www.aau.at/en/statistics/" target = "_blank">Department of Statistics</a> 
   at the Alpen&ndash;Adria University of Klagenfurt.
   I am working in the <em>Stochastic Processes</em> group of <a href = "https://www-stat.aau.at/ms/index.html" target = "_blank">Michaela Sz&ouml;lgyenyi</a>.
@@ -194,7 +198,7 @@ tbody tr td:first-child {
 <h3>Posters</h3>
 <p><a href = "adapted-wasserstein-poster.pdf" target = "_blank">Adapted Wasserstein distance between the laws of SDEs</a></p>
 <p><a href = "poster-winter-school-2024.pdf" target = "_blank">Bicausal optimal transport for SDEs with irregular coefficients</a></p>
-<dd><a href = "poster-winter-school-2024.pdf" target = "_blank"><img class = "main" src = "poster-winter-school-2024.png" alt = "Thumbnail of poster" title = "Poster" height = 300px></a></dd>
+<dd><a href = "poster-winter-school-2024.pdf" target = "_blank"><img class = "poster" src = "poster-winter-school-2024.png" alt = "Thumbnail of poster" title = "Poster"></a></dd>
 </div>
 
 <p>&nbsp;</p>
